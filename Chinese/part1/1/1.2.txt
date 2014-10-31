@@ -1,0 +1,46 @@
+1.2 Groovy可以帮助到java的那些特点
+    其实我一直在陈列这些特点，但是有几点我想特别
+强调一下。首先一个Groovy版本的java类远远要比Java
+版本的java类，更精炼、更通俗易懂。
+	上面的陈述虽然正确，但总显得有点误导大家。其
+实，我不是想让大家用Groovy重写那些java代码；恰恰
+相反，如果你有好用的java程序这很好（虽然有可能你
+现在就想用Groovy编写它的测试用例）。在这本书中，
+我更想让Groovy协助java，而不是取代它。
+	Groovy能提供给java什么支持呢？这有一个小列表
+（在本书的剩余部分我们将会详细的讨论它们）
+	1.Groovy为已存在的java类增添新能力
+	Groovy包含一个Groovy JDK，这个Groovy JDK记载
+	了Groovy向java库中添加的方法。即简单有丰富的
+	sort方法已经加到了Collection接口中。甚至可以
+	利用Groovy进行运算符的重载（详见第4章）
+	2.Groovy可以用java的类库
+	事实上每一个Groovy类都依赖于java的类库（有一
+	些有所改动）。这就意味着每一个Groovy类，都有
+	Groovy和java共同的基因。Groovy就是对于java类
+	库的一场新的探索。
+	3.Groovy让xml和json容易
+	这是Groovy的闪光点。Groovy有可以让xml的产生变
+	的更容易的MarkupBuilder，也有可以产生json对象
+	的JsonBuilder。它更有可以在内存中将xml换成DOM的
+	XmlParser和XmlSlurper。甚至还有可以粘贴Json数据
+	的JsonSlurper。这些将贯穿整本书，特别是在第九章
+	4.Groovy包含简单的数据源操作
+	Groovy.sql。Sql类提供了对于关系型数据的简单操作。
+	7、8、9章都有讲解
+	5.Groovy对于元编程的简化
+	构造者类是Groovy元编程的简单例子。在后几章中，
+	我将展示几个DSLs的例子。
+	6.Groovy为Java代码测试
+	Spock测试工具，是一个极好的测试java系统的方式
+	在本章中会简单的展示，在第6章中会详细的讨论
+	7.Groovy的构建工具可以工作在java程序之上
+	在第5章加快构建速度中，我们将聊聊AntBuilder，
+	怎样加Groovy和Gradle到Maven
+	8.像Grails和Griffon之类的Groovy程序，将简化桌面
+	和web应用的开发
+	基于spring和hibernate的Grails程序，是全栈式的
+	端到端的。Griffon为桌面应用带来了相同的约定优于
+	配置的思想。Grails将在第8章和第10章出现。
+当我们眼睁睁的看着java开发者遇到的各种各样的问题时
+这个列表将要带来一系列新的观念---更简单、更易读、更有效率
