@@ -1,0 +1,25 @@
+1. Hello Groovy
+	每本编程语言入门书都必须展示一个“Hello World” 代码
+这是Groovy版的
+	println 'Hello World'
+	在java中，你得用javac编译，然后再用java执行生成字节码。
+在Groovy中，你得改用groovyc编译，并用groovy执行，但事实上
+一开始你并不需要编译。groovy指令只需要加点参数，就可以编译
+并执行。Groovy是一个需要编译的语言，但是你并不需要这样做
+（虽然有些人经常干那些费力的事）。当你用一个IDE了，你每次
+只要一保存Groovy的代码，它就已经编译了。
+	上面提到的Hello World是一个完整的程序。不像java，Groovy
+代码不必要都放在class中。Groovy支持脚本式运行。但在这背后
+依旧是java字节码，Groovy脚本其实也只是放在groovy.lang.Script
+这个类中main方法中的代码。
+	强调一下Groovy和java在语法上的两点不同。
+	1.分号是可选的。当一行中超过一句代码的时候你可以加上它，
+		但其实那种代码风格是不好的。
+	2.圆括号也是可选的。println指令其实是个方法调用，String
+		是它的一个参数。因为没什么歧义，所以你可以不要那个小括号。
+		如果你想加上它们也没错。
+	“可选”原则：有歧义加上它们，没歧义就算了吧。
+	
+	现在”Hello World“ 这个例子就这样完成了，接下来让我们来点更有意思的。
+一个有益的Groovy的实际应用就是Groovy能为像Google图表这样的REST化
+的web服务搭建一个客户端。
